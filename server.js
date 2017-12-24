@@ -20,24 +20,4 @@ function tweetEvent(tweet) {
     T.post('statuses/retweet/:id', { id: nameID }, function (err, data, response) {
   	console.log('New tweet retweeted',text)
 	})
-    /*
-    console.log(params);
-
-
-        var new_tweet = '@' + from + " Hey there partner, you should try spelling the 🐐's name correctly";
-        var tweet = {
-            status: new_tweet,
-            in_reply_to_status_id: nameID
-        }
-
-        T.post('statuses/retweet/:id', { id: nameID }, tweeted);
-
-        function tweeted(err, data, response) {
-            if (err) {
-                console.log("Something went wrong!");
-            } else {
-                console.log("It worked!");
-            }
-        }
-        */
 }
