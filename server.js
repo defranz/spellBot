@@ -15,8 +15,7 @@ function tweetEvent(tweet) {
     var text       = tweet.text;
     var from       = tweet.user.screen_name;
     var nameID     = tweet.id_str;
-    // params just to see what is going on with the tweets
-    var params     = {reply_to, text, from, nameID};
+    // params just to see what is going on with the tweet
     T.post('statuses/retweet/:id', { id: nameID }, function (err, data, response) {
   	console.log('New tweet retweeted',text)
 	})
